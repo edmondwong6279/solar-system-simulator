@@ -9,7 +9,7 @@ const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
 	console.log(process.env.PUBLIC_URL);
 
 	// read line by line, process from these coords to xyz coords, push into an array
-	fs.readFile(`data.csv`, 'utf8', (err, data) => {
+	fs.readFile(`/data.csv`, 'utf8', (err, data) => {
 		if (err) {
 			console.error(err);
 			return;

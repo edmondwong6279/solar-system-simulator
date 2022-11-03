@@ -1,24 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simple solar system simulation
 
-## Getting Started
+Incredibly rough approximation of the solar system (not to scale at all). Practising use of threejs and cannon-es.
 
-First, run the development server:
+## Running the application:
+Developed using node 16.17.1.
 
-```bash
-yarn dev
-```
+```yarn install```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```yarn build```
 
-You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
+```yarn start```
 
-The `src/pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## To do:
+1. Background image is very large, either optimise or create loading screen that pauses until all assets are loaded in.
+2. Check the maths used to make sure the movement is correct and that it is only the rendered sizes that are scaled up.
+3. Add a timeslider to increase time.
